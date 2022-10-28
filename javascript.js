@@ -61,12 +61,19 @@ window.addEventListener('mouseup', function (e){
     btn.forEach(btn => btn.removeEventListener('mouseover', changeColor))
      }
 );
-
+/*
 function changeColor(){
     console.log('change color triggered')
-    this.style.backgroundColor = 'green';
+    this.style.backgroundColor = 'rgb(225, 211, 110)';
+};*/
+
+function changeColor(){
+    console.log('change color triggered');
+    const number1 = Math.random()*255;
+    const number2 = Math.random()*255;
+    const number3 = Math.random()*255;
+
+    this.style.backgroundColor = `rgb(${number1}, ${number2}, ${number3})`;
 };
-
-
 
 createCanva();
