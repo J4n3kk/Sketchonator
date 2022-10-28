@@ -1,0 +1,23 @@
+body {
+    background-color: antiquewhite;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 100px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 129px;
+}
+
+.working-space {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 500px;
+    border: 10px solid black;
+}
